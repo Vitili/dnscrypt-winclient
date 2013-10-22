@@ -1,4 +1,5 @@
-![image](https://raw.github.com/FivfBx2dOQTC3gc8YS4yMNo0el/dnscrypt-winclient/master/screenshot.png)
+![image](https://raw.github.com/Vitili/dnscrypt-winclient/master/screenshot.png)
+![image](https://raw.github.com/Vitili/dnscrypt-winclient/master/screenshot1.png)
 
 About
 =====
@@ -6,7 +7,7 @@ The purpose of this application is to allow the user to have a better experience
 
 Requirements
 ============
-DNSCrypt Proxy 0.9.4 or greater (http://download.dnscrypt.org/dnscrypt-proxy/)  
+DNSCrypt Proxy 1.3.3 or greater (http://download.dnscrypt.org/dnscrypt-proxy/)  
 Microsoft .NET Framework 2.0 or greater (http://www.microsoft.com/net/download)
 
 Running
@@ -19,14 +20,20 @@ Features
 - Enable DNSCrypt on multiple adapters via a checkbox
 - Specify a port and protocol to send on
 - Start/Stop the DNSCrypt proxy
-- Select DNS resolver, OpenDNS or CloudNS.com.au
+- Select DNS resolver, OpenDNS , CloudNS.com.au , OpenNIC , DNSCrypt.eu
 - Connect to OpenDNS via IPv6
 - Connect to OpenDNS with Parental Controls enabled
 - Enable the proxy to act as a gateway device
+- periodically check that the proxy application is alive
+- proxy is not visible (check the debug/info inside the client)
+
+
 
 When a box is unchecked or the application is closed, all DNS server settings are reverted to their original state. This is so that browsing doesn't break if the proxy isn't restarted on the next system start. The "(Automatic)" marker appears if no DNS servers were assigned and they are provided by the router/ISP.
 
 Possible future plans
 =====================
-- Have a background worker periodically check that the proxy application hasn't crashed.
-- Pick up a few of the other parameters that the proxy accepts
+- Add more parameters that the proxy accepts
+- Support more language
+- Ability to update server list
+- Apply new theme 
